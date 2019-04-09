@@ -1,0 +1,23 @@
+{
+  "name": "breakinpropaganda",
+  "version": "1.0.0",
+  "description": "NO BIASED VIEWS",
+  "main": "index.js",
+  "dependencies": {
+    "npm": "^6.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pananon/breakinpropaganda.git"
+  },
+  "author": "Harimangal Pandey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pananon/breakinpropaganda/issues"
+  },
+  "homepage": "https://github.com/pananon/breakinpropaganda#readme"
+}

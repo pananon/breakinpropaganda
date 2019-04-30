@@ -18,7 +18,15 @@
   <div class="container">
   	<div class="row">
   		<div class="col-md-8 offset-md-2">
-  			<form action="/posts/store" method="POST">
+  			<form action="/posts/store" method="POST" enctype="multipart/form-data">
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Username</label>
+              <input type="text" placeholder ="Username"name="username" class="form-control">
+
+            </div>
+          </div>
+
   				<div class="control-group">
   					<div class="form-group floating-label-form-group controls">
   						<label>Title</label>
@@ -28,8 +36,8 @@
   				</div>
   				<div class="control-group">
   					<div class="form-group floating-label-form-group controls">
-  						<label>Description</label>
-  						<input type="text" placeholder ="Description" name="description" class="form-control">
+  						<label>Subtitle</label>
+  						<input type="text" placeholder ="Subtitle" name="subtitle" class="form-control">
   						
   					</div>
   				</div>
@@ -41,6 +49,14 @@
   						
   					</div>
   				</div>
+
+            <div class="form-group">
+              <input type="file" name="image" class="form-control-file">           
+          </div>
+
+
+
+
   				<div class="form-group my-4 text-centre">
   					<button class="btn btn-primary" style="margin:auto;display:block">Create Post</button>
   				</div>

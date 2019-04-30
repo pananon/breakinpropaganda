@@ -3,17 +3,17 @@
 @section('content')
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('/img/post-bg.jpg')">
+  <header class="masthead" style="background-image: url('{{post.image}}')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
             <h1>{{post.title}}</h1>
-            <h2 class="subheading">{{post.description}}</h2>
+            <h2 class="subheading">{{post.subtitle}}</h2>
             <span class="meta">Posted by
-              <a href="#">Harimangal Pandey</a>
-              on April 13 4:18AM, 2019</span>
+              <a href="#">{{post.username}}</a> On {{post.createdAt.toDateString()}}
+              </span>
           </div>
         </div>
       </div>
@@ -26,6 +26,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <p>{{post.content}}</p>
+          <img src="{{post.image}}">
+           
         </div>
       </div>
     </div>

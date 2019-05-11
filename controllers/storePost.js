@@ -4,7 +4,7 @@ const Post = require('../database/models/Post')
 
 module.exports = (req,res) => {
 	
-	const {image} = req.body.files
+	const {image} = req.files
 
 	image.mv(path.resolve(__dirname,'..','public/posts',image.name),(error) =>{
 
